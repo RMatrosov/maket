@@ -1,0 +1,1180 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Raleway - Extra Bold";
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+/* @font-face {
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+ */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container, .container-main-icons, .container-ideas, .container-latest, .container-excellent, .container-information, .container-posts {
+  width: 1230px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../img/header.png);
+  height: 1024px;
+  position: relative;
+}
+
+.head-cont {
+  background: rgba(0, 0, 0, 0.5);
+  height: 1024px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.logo {
+  padding: 35px 0 0px 20px;
+}
+
+.logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 185px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo-link:hover .logo-icon {
+  fill: #8e8273;
+}
+
+.logo-link:hover .logo-txt {
+  color: #8e8273;
+}
+
+.logo-link:active .logo-icon {
+  fill: #8e8273;
+}
+
+.logo-link:active .logo-txt {
+  color: #8e8273;
+}
+
+.logo-icon {
+  fill: CurrentColor;
+}
+
+.logo-txt {
+  font-family: "Raleway", sans-serif;
+  font-size: 34px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-wrapper {
+  padding: 55px 0 0 170px;
+}
+
+.waxom {
+  padding-right: 249px;
+}
+
+.header-item {
+  width: 42px;
+  height: 10px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+.header-item:hover {
+  color: #b3a18b;
+}
+
+.header-icons {
+  padding: 50px 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-icon {
+  padding-left: 28px;
+}
+
+.header-icon:hover {
+  color: #b3a18b;
+}
+
+.search-icon-form {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 30%;
+  position: relative;
+  /*   border: 1px solid #fff; */
+}
+
+.search-icon-form__label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://findicons.com/files/icons/2813/flat_jewels/512/search.png");
+}
+
+.search-icon-form__label:hover .search-icon-form__svg {
+  fill: #b3a18b;
+}
+
+.search-icon-form__label:active .search-icon-form__svg {
+  fill: #b3a18b;
+}
+
+.search-icon-form__svg {
+  fill: #fff;
+  cursor: pointer;
+}
+
+.search-icon-form__input {
+  width: 0;
+  min-height: 0;
+  padding: 5px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 40px;
+  left: -119px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial;
+  text-transform: capitalize;
+}
+
+.search-icon-form__input:focus {
+  /*   display: block; */
+  width: 150px;
+  min-height: 20px;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+  border: 2px solid #fff;
+}
+
+.search-icon-form__input:focus ~ .search-icon-form__label > .search-icon-form__svg {
+  fill: #fff;
+}
+
+.portfolio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 300px;
+}
+
+.portfolio-subtitle {
+  height: 34px;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.portfolio-title {
+  width: 589px;
+  height: 50px;
+  color: #ffffff;
+  font-family: "Raleway - Extra Bold";
+  font-size: 52px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.portfolio-text {
+  width: 562px;
+  height: 39px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.portfolio-btn {
+  width: 94px;
+  height: 11px;
+  color: #ffffff;
+  font-family: "Raleway - Extra Bold";
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 170px;
+  height: 53px;
+  -webkit-box-shadow: inset 0 -3px 0 #736357;
+          box-shadow: inset 0 -3px 0 #736357;
+  border-radius: 3px;
+  background-color: #998675;
+  margin-top: 50px;
+}
+
+.portfolio-btn:hover {
+  color: #b3a18b;
+  background-color: #3f2c23;
+}
+
+.portfolio-btn:active {
+  color: #b3a18b;
+}
+
+.portfolio-wrapper {
+  text-align: center;
+}
+
+.arrow {
+  width: 40px;
+  height: 73px;
+  background-color: transparent;
+  background-image: url(../img/left.svg);
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  border: 2px solid #fff;
+}
+
+.arrow-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.pagination {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100px;
+  margin: 0 auto;
+  padding-top: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination-item {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.pagination-item:hover {
+  background-color: transparent;
+  border: 2px solid gold;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.features-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0 80px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 266px;
+  padding: 10px 10px 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.features:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background-color: #555555;
+}
+
+.features:hover .features-icon {
+  fill: #c7b299;
+}
+
+.features:hover .features-title {
+  color: #c7b299;
+}
+
+.features:hover:after {
+  background-color: #c7b299;
+}
+
+.features-icon {
+  display: block;
+  fill: #555555;
+  margin: 0 0 20px 0;
+}
+
+.features-title {
+  width: 100%;
+  margin: 0 0 10px 0;
+  text-align: center;
+  color: #555555;
+  font-family: "Raleway - Semi Bold";
+  font-size: 22px;
+}
+
+.features-txt {
+  text-align: center;
+  color: #8c8c8c;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.ideas {
+  height: 700px;
+  background-color: #fbfaf8;
+}
+
+.container-ideas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ideas-title {
+  margin: 0;
+  padding-top: 80px;
+  /* Style for "Waxom is R" */
+  width: 500px;
+  height: 28px;
+  color: #555555;
+  font-family: "Raleway - Semi Bold";
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  /* Text style for "Waxom is R" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.ideas-text {
+  margin: 0;
+  padding-top: 24px;
+  /* Style for "Investigat" */
+  width: 757px;
+  height: 43px;
+  color: #8c8c8c;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  /* Text style for "Investigat" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.multi_photo {
+  width: 100%;
+  min-height: 482px;
+  background-image: url(../img/main/browser-center.png), url(../img/main/browser-left.png), url(../img/main/browser-right.png);
+  background-size: 60%, 40%, 40%;
+  background-repeat: no-repeat;
+  background-position: bottom center, bottom left, bottom right;
+  margin: 0;
+  padding-top: 43px;
+}
+
+.containet-aside {
+  background-image: url(../img/main/Background.png);
+  min-height: 150px;
+  margin: 0 auto;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 150px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+}
+
+.ad-wrapper {
+  width: 531px;
+  margin: 0 470px 0 0;
+}
+
+.ad-title {
+  width: 100%;
+  margin: 0;
+  font-size: 28px;
+  font-family: "Raleway";
+  color: #fff;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.ad-title span {
+  color: #c7b299;
+}
+
+.ad-txt {
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #615855;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.ad-button {
+  width: 170px;
+  min-height: 50px;
+  border: none;
+  border-bottom: 2px solid #736357;
+  border-radius: 3px;
+  background-color: #998675;
+  -webkit-box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+          box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+}
+
+.ad-button:hover {
+  color: #b3a18b;
+  background-color: #3f2c23;
+  border: 2px solid  black;
+}
+
+.ad-button-txt {
+  font-size: 14px;
+  font-family: "Raleway";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.643;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ad-button-txt:hover {
+  color: #b3a18b;
+}
+
+.container-latest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.latest-title {
+  padding-top: 81px;
+  margin: 0;
+  /* Style for "Our Latest" */
+  width: 275px;
+  height: 28px;
+  color: #555555;
+  font-family: "Raleway - Semi Bold";
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  /* Text style for "Our Latest" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.latest-text {
+  padding-top: 24px;
+  margin: 0;
+  /* Style for "Investigat" */
+  width: 757px;
+  height: 43px;
+  color: #8c8c8c;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  /* Text style for "Investigat" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.latest-buttons {
+  padding-top: 50px;
+}
+
+.latest-btn {
+  cursor: pointer;
+  width: 83px;
+  height: 14px;
+  color: #8c8c8c;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  width: 120px;
+  height: 32px;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+  background-color: white;
+}
+
+.latest-btn:first-child {
+  width: 70px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.latest-btn:hover {
+  background-color: #b3a18b;
+  color: white;
+}
+
+.latest-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.article {
+  margin: 15px 15px 15px 15px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.article:hover .article-photo {
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+}
+
+.article:hover .article-txt-wrapper {
+  background-color: #362f2d;
+}
+
+.article:hover .article-txt-wrapper:before {
+  border-bottom: 10px solid #362f2d;
+}
+
+.article-photo {
+  display: block;
+  width: 370px;
+  height: 237px;
+}
+
+.article-txt-wrapper {
+  position: relative;
+  /* Style for "bg" */
+  width: 370px;
+  height: 100px;
+  background-color: #fbfaf8;
+}
+
+.article-txt-wrapper:before {
+  content: "";
+  border: 10px solid transparent;
+  border-bottom: 10px solid #ccc;
+  position: absolute;
+  top: -20px;
+  left: 19px;
+}
+
+.article-title {
+  display: block;
+  text-align: center;
+  padding: 28px 10px 0 30px;
+  height: 15px;
+  color: #c7b299;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.article-txt {
+  display: block;
+  text-align: center;
+  padding: 14px 0 0 30px;
+  color: #d1d1d1;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: left;
+  /* Text style for "Photograph" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.article-btn-link,
+.article-btn-search {
+  width: 20px;
+  height: 20px;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 45%;
+}
+
+.article-btn-link {
+  background-image: url(../img/link.svg);
+  left: 35%;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.article-btn-search {
+  background-image: url(../img/lupa.svg);
+  right: 35%;
+  cursor: pointer;
+}
+
+.article:hover .article-btn-link {
+  display: block;
+}
+
+.article:hover .article-btn-search {
+  display: block;
+}
+
+.article-btn-link:hover {
+  fill: "#fff";
+  /* background-color: #362f2d; */
+}
+
+.article:hover .article-btn-search:hover {
+  /* background-color: #362f2d; */
+}
+
+.video {
+  margin-top: 100px;
+  width: 100%;
+  min-height: 705px;
+  border: 1px solid;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video-file {
+  width: 100%;
+  height: 100v;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-play-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.video-play-btn-icon {
+  margin: auto;
+  fill: #fff;
+}
+
+.video-play-btn:hover .video-play-btn-icon {
+  fill: #998675;
+}
+
+.video-play-btn:active .video-play-btn-icon {
+  fill: bisque;
+}
+
+.inf-wrap {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 240px 0;
+}
+
+.video-title {
+  width: 382px;
+  height: 22px;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  /* Text style for "Waxom Vide" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.video-txt {
+  width: 552px;
+  height: 43px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  width: 552px;
+  margin: 0 auto;
+  top: 10%;
+  left: 15%;
+}
+
+.container-excellent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 77px;
+  padding-top: 79px;
+}
+
+.excellent-img {
+  width: 423px;
+  height: 616px;
+}
+
+.phone {
+  width: 423px;
+  height: 616px;
+}
+
+.excellent-inf {
+  padding-left: 29px;
+}
+
+.excellent-title {
+  padding-top: 116px;
+  margin: 0;
+  /* Style for "Excellent" */
+  width: 407px;
+  height: 22px;
+  color: #555555;
+  font-family: "Raleway - Semi Bold";
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  /* Text style for "Excellent" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.excellent-text {
+  padding-top: 40px;
+  margin: 0;
+  width: 620px;
+  height: 99px;
+  color: #8c8c8c;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: left;
+}
+
+.excellent-list {
+  margin: 0;
+  padding-top: 40px;
+}
+
+.excellent-item {
+  /* Style for "Nam liber" */
+  color: #8c8c8c;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 32px;
+  text-align: left;
+  /* Text style for "Nam liber" */
+  font-style: normal;
+  letter-spacing: normal;
+  list-style: none;
+  background: url(../img/list.png) no-repeat 0 4px;
+  padding-left: 29px;
+}
+
+.information {
+  height: 300px;
+  background-color: #f4f5f8;
+  background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.information-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding-top: 69px;
+}
+
+.information-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.information-item::after {
+  content: '';
+  width: 30px;
+  display: inline-block;
+  border-bottom: 2px solid #fff;
+  padding-top: 30px;
+}
+
+.information-title {
+  margin: 0;
+  padding-top: 30px;
+  /* Style for "3587" */
+  width: 105px;
+  height: 34px;
+  color: #ffffff;
+  font-family: "Montserrat - Ultra Light";
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  text-align: center;
+  /* Text style for "3587" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.information-text {
+  margin: 0;
+  padding-top: 30px;
+  color: #c7b299;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 750px;
+}
+
+.container-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.posts-card-title {
+  height: 21px;
+  color: #555555;
+  font-family: "Raleway - Semi Bold";
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.posts-card-text {
+  width: 757px;
+  height: 43px;
+  color: #8c8c8c;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  /* Text style for "Investigat" */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.posts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* width: 100%;
+flex-wrap: wrap; */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.posts-item {
+  position: relative;
+  width: 370px;
+  border: 1px solid #f8f8f8;
+  margin-bottom: 40px;
+  margin: 0;
+}
+
+.posts-img {
+  margin-bottom: 30px;
+}
+
+.posts-title {
+  font-family: 'Raleway',sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #555555;
+  margin: 0 30px 20px;
+}
+
+.posts-text {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #8c8c8c;
+  width: 300px;
+  margin: 0 30px 30px;
+}
+
+.posts-btn {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #ccb8a1;
+  margin: 0 0 35px 30px;
+  background-color: transparent;
+  opacity: .7;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.posts-list:hover {
+  background-color: #362f2d;
+}
+
+.posts-item:hover .posts-img {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.posts-item:hover .posts-title {
+  color: #c7b299;
+}
+
+.posts-item:hover .posts-text {
+  color: #fff;
+}
+
+.posts-item:hover .posts-day {
+  background-color: #c7b299;
+}
+
+.posts-item:hover .posts-month {
+  background-color: #a48d72;
+}
+/*# sourceMappingURL=style.css.map */
