@@ -1,0 +1,668 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+%container-set {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+
+
+.header {
+    background-image: url(../img/header.png);
+    height: 1024px;
+    position: relative;
+}
+
+
+.head-cont {
+    background: rgba(0, 0, 0, 0.5);
+    height: 1024px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+
+
+.container {
+    @extend %container-set;
+
+}
+
+.logo {
+    padding: 35px 0 0px 20px;
+}
+
+
+.logo-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 185px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-link:hover .logo-icon {
+    fill: #8e8273;
+}
+
+.logo-link:hover .logo-txt {
+    color: #8e8273;
+}
+
+.logo-link:active .logo-icon {
+    fill: #8e8273;
+}
+
+.logo-link:active .logo-txt {
+    color: #8e8273;
+}
+
+.logo-icon {
+    fill: CurrentColor;
+}
+
+.logo-txt {
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+}
+
+
+.header-nav {
+    display: flex;
+
+}
+
+.nav-wrapper {
+    padding: 55px 0 0 219px;
+}
+
+.waxom {
+    padding-right: 249px;
+}
+
+.header-item {
+    width: 42px;
+    height: 10px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.header-item:hover {
+    color: #b3a18b;
+}
+
+.header-icons {
+    padding: 50px 0 0 30px;
+}
+
+.header-icon {
+    padding-left: 28px;
+}
+
+.header-icon:hover {
+    color: #b3a18b;
+}
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-subtitle {
+    width: 456px;
+    height: 34px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+    margin: 0;
+    padding-top: 300px;
+}
+
+.portfolio-title {
+    width: 589px;
+    height: 50px;
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 52px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+    margin: 0;
+    padding-top: 15px;
+}
+
+
+
+.portfolio-text {
+    width: 562px;
+    height: 39px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+.portfolio-btn {
+
+    width: 94px;
+    height: 11px;
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+
+    width: 170px;
+    height: 53px;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+
+
+    margin-top: 50px;
+
+}
+
+.main {}
+
+.container-main-icons {
+    @extend %container-set;
+}
+
+.features-wrapper {
+    display: flex;
+    padding: 80px 0 80px 0;
+    justify-content: space-around;
+}
+
+
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 266px;
+    padding: 10px 10px 0 10px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+.features:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #555555;
+}
+
+.features:hover .features-icon {
+    fill: #c7b299;
+}
+
+.features:hover .features-title {
+    color: #c7b299;
+}
+
+.features:hover:after {
+    background-color: #c7b299;
+}
+
+.features-icon {
+    display: block;
+    fill: #555555;
+    margin: 0 0 20px 0;
+}
+
+.features-title {
+    width: 100%;
+    margin: 0 0 10px 0;
+    text-align: center;
+
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 22px;
+}
+
+
+.features-txt {
+    text-align: center;
+
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+
+}
+
+
+.ideas {
+    height: 700px;
+    background-color: #fbfaf8;
+}
+
+.container-ideas {
+    @extend %container-set;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ideas-title {
+
+    margin: 0;
+    padding-top: 80px;
+    /* Style for "Waxom is R" */
+    width: 500px;
+    height: 28px;
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    /* Text style for "Waxom is R" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.ideas-text {
+
+    margin: 0;
+    padding-top: 24px;
+
+    /* Style for "Investigat" */
+    width: 757px;
+    height: 43px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+    /* Text style for "Investigat" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+
+
+.multi_photo {
+    width: 100%;
+    min-height: 482px;
+    background-image: url(../img/main/browser-center.png),
+        url(../img/main/browser-left.png),
+        url(../img/main/browser-right.png);
+
+    background-size: 60%, 40%, 40%;
+    background-repeat: no-repeat;
+    background-position: bottom center, bottom left, bottom right;
+    margin: 0;
+    padding-top: 43px;
+}
+
+
+
+.containet-aside {
+    background-image: url(../img/main/Background.png);
+    min-height: 150px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+.ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: -moz-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
+}
+
+.ad-wrapper {
+    width: 531px;
+    margin: 0 470px 0 0;
+    /* Вместо использования margin-left: 470px, можно обернуть в div элементы ad-wrapper и ad-button, задать тегу div ширину и центровку. 
+    При таком подходе у блока .ad можно будет убрать justify-content: center; align-items: center; width: 100%; */
+}
+
+.ad-title {
+    width: 100%;
+    margin: 0;
+    font-size: 28px;
+    font-family: "Raleway";
+    color: #fff;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.ad-title span {
+    color: rgb(199, 178, 153);
+}
+
+.ad-txt {
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(97, 88, 85);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.ad-button {
+    width: 170px;
+    min-height: 50px;
+    border: none;
+    border-bottom: 2px solid #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+}
+
+.ad-button-txt {
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.643;
+    text-align: center;
+}
+
+
+
+.latest {}
+
+.container-latest {
+    @extend %container-set;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.latest-title {
+    padding-top: 81px;
+    margin: 0;
+    /* Style for "Our Latest" */
+    width: 275px;
+    height: 28px;
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    /* Text style for "Our Latest" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+}
+
+.latest-text {
+    padding-top: 24px;
+    margin: 0;
+    /* Style for "Investigat" */
+    width: 757px;
+    height: 43px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+    /* Text style for "Investigat" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+}
+
+.latest-buttons {
+    padding-top: 50px;
+}
+
+.latest-btn {
+    /* Style for "Web Design" */
+    width: 83px;
+    height: 14px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 21px;
+    text-align: center;
+    /* Text style for "Web Design" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+
+    /* Style for "button" */
+    width: 120px;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    background-color: white;
+
+}
+
+.latest-btn:first-child {
+    /* Style for "button" */
+    width: 70px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+
+.latest-btn:hover {
+    background-color: #b3a18b;
+    color: white;
+}
+
+
+.latest-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+
+.article {
+    margin: 15px 15px 15px 15px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.article:hover .article-btn-link {
+    display: block;
+}
+
+.article:hover .article-btn-search {
+    display: block;
+}
+
+.article:hover .article-btn-link:hover {
+    background-color: #362f2d;
+}
+
+.article:hover .article-btn-search:hover {
+    background-color: #362f2d;
+}
+
+.article:hover .article-photo {
+    filter: brightness(20%);
+}
+
+.article:hover .article-txt-wrapper {
+    background-color: #362f2d;
+}
+
+.article:hover .article-txt-wrapper:before {
+    border-bottom: 10px solid #362f2d;
+}
+
+.article-photo {
+display: block;
+  
+width: 370px;
+height: 237px;
+}
+
+.article-txt-wrapper {
+position: relative;
+   
+
+
+    /* Style for "bg" */
+width: 370px;
+height: 100px;
+background-color: #fbfaf8;
+}
+
+.article-txt-wrapper:before {
+    content: "";
+    border: 10px solid transparent;
+    border-bottom: 10px solid #ccc;
+    position: absolute;
+    top: -20px;
+    left: 19px;
+
+}
+
+.article-title {
+    display: block;
+    text-align: center;
+    padding: 28px 10px 0 30px;
+
+    /* Style for "Claritas E" */
+    width: 229px;
+    height: 15px;
+    color: #c7b299;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    /* Text style for "Claritas E" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.article-txt {
+    display: block;
+    text-align: center;
+    padding: 14px 0 0 30px;
+
+    
+    color: #d1d1d1;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+    /* Text style for "Photograph" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.article-btn-link,
+.article-btn-search {
+    width: 20px;
+    height: 20px;
+    display: none;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 45%
+}
+
+.article-btn-link {
+    background-image: url('https://image.flaticon.com/icons/png/512/34/34735.png');
+    left: 35%;
+}
+
+.article-btn-search {
+    background-image: url('https://static.thenounproject.com/png/101791-200.png');
+    right: 35%;
+}
